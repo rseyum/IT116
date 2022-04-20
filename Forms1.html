@@ -7,23 +7,50 @@
     <title>Forms</title>
   </head>
   <body>
-    <h1>First Form</h1>
-    <!-- we are creating forms  using the from tag  -->
-    <form action="/Rahel">
+    <section>
+      <h1>UserName and Password input</h1>
+      <!-- we are creating forms  using the from tag  -->
+      <form action="/Rahel">
         <!-- the p tag defines paragraph  -->
-      <p>
+        <p>
           <!-- This is the username lable and text with attributes of a placeholder -->
-        <label for="username">Enter A Name:</label>
-        <input id="username" type="text" placeholder="Rahel" name="username">
-      </p>
-     <!--  -->
-      <p>
+          <label for="username">Enter A Name:</label>
+          <input
+            id="username"
+            type="text"
+            placeholder="Rahel"
+            name="username"
+          />
+        </p>
+        <!--  -->
+        <p>
           <!-- this is the password label and textbox with attibutes of a placeholder -->
-        <label for="username">Enter A Password:</label>
-        <input id="password" type="text" placeholder="Rahelpassword" name="password">
-      </p>
-      <!-- this tag is used to push what we did  -->
-      <button>Submit Button</button>
-    </form>
+          <label for="username">Enter A Password:</label>
+          <input
+            id="password"
+            type="text"
+            placeholder="Rahelpassword"
+            name="password"
+          />
+        </p>
+        <!-- this tag is used to push what we did  -->
+        <button>Submit Button</button>
+      </form>
+    </section>
+    <section>
+      <h1>Query String</h1>
+      <form action="">
+        <input type= "text" name="q">
+        <button>Search Reddit</button>
+      </form>
+
+      <form action="https://www.youtube.com/results?search_query=">
+        <input type="text" name="" />
+        <button>youtube Search</button>
+      </form>
+    <form action="https://www.google.com/search?"></form>
+    <input type="text" name="q">
+    <button>Google Search</button>
+    </section>
   </body>
 </html>
