@@ -39,18 +39,35 @@
     </section>
     <section>
       <h1>Query String</h1>
-      <form action="">
-        <input type= "text" name="q">
+      <form action="https://www.Reddit.com/Search/">
+        <input type="text" name="q" />
         <button>Search Reddit</button>
       </form>
 
       <form action="https://www.youtube.com/results?search_query=">
-        <input type="text" name="" />
+        <input type="text" name="q" />
         <button>youtube Search</button>
       </form>
-    <form action="https://www.google.com/search?"></form>
-    <input type="text" name="q">
-    <button>Google Search</button>
+      <form action="https://www.google.com/search?">
+        <input type="text" name="q" />
+        <button>Google Search</button>
+      </form>
+    </section>
+    <section>
+      <form action="/birds">
+        <h1>Checkboxes and Radio Buttons</h1>
+
+        <label for="agree">I agree for everything</label>
+        <input type="checkbox" name="agree_tos" id="agree" />
+        <p>
+          <label for="s">Small:</label>
+          <input type="radio" name="size" id="s" value="s" />
+          <label for="s">Medium:</label>
+          <input type="radio" name="size" id="m" value="m" />
+          <label for="s">Large:</label>
+          <input type="radio" name="size" id="l" value="l" />
+        </p>
+      </form>
     </section>
   </body>
 </html>
