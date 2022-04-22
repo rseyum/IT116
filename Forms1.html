@@ -7,13 +7,21 @@
     <title>Forms</title>
   </head>
   <body>
+    <!--  -->
     <section>
       <h1>UserName and Password input</h1>
       <!-- we are creating forms  using the from tag  -->
+       <!--the <form> is used to create for user input like checkboxes,radio buttons,submit buttons,text etc
+         the <input> Html element with type="text" displays single line text input field
+         the <input> html element with type="radio" displays a radio button used for selecting one of limited number of choices
+          the <input> html element with type="checkbox" displays a checkbox used for selectig zero or many more choices
+           the <input> html element with type="submit" displays a submit button used for submitting the form
+            the <input> html element with type="button" displays a clickable button. -->
       <form action="/Rahel">
         <!-- the p tag defines paragraph  -->
         <p>
-          <!-- This is the username lable and text with attributes of a placeholder -->
+          <!-- This is the username label and text with attributes of a placeholder 
+          the <label> tag defines a label for several elements-->
           <label for="username">Enter A Name:</label>
           <input
             id="username"
@@ -33,7 +41,7 @@
             name="password"
           />
         </p>
-        <!-- this tag is used to push what we did  -->
+       
         <button>Submit Button</button>
       </form>
     </section>
@@ -43,7 +51,7 @@
         <input type="text" name="q" />
         <button>Search Reddit</button>
       </form>
-
+       
       <form action="https://www.youtube.com/results?search_query=">
         <input type="text" name="q" />
         <button>youtube Search</button>
