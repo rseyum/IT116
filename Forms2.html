@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- 
+-h1 is the largest heading to display "Please fill out the form below" in h1 size
+-The action is an attribute of <form> element that specifies the url of the second web page. 
+The second page receives the form-data from the first page after the submission of a form.
+-label tag defines a label for elements. and it describes every items on the UI
+-The name attribute is used to reference the element in JavaScripts 
+-->
     <h1>Please fill out the form below</h1>
-    <form action="text">
-        <label for="username">First Name:</label>
-        <input type="text" name="username" id="name" placeholder="First Name">
+    <form action="/rahel">
+      <label for="username">First Name:</label>
+      <input type="text" name="username" id="name" placeholder="First Name" />
+      <!-- 
+- the p tag defines paragraph
+- input tag specifies an input field where the user can enter data. and placeholder gives us hint what to write 
+even if we are missing a label description in the user input field it disapears once we start writing on it
+- The type attribute specifies the type of <input> element to display.
+If the type attribute is not specified, the default type is "text". 
+-HTML id attribute identifies an element in an HTML document. 
+-->
 
-        <form action="/Rahel">
-            <!-- the p tag defines paragraph  -->
-            <p>
-              <!-- This is the username label and text with attributes 
-                of a placeholder the <label> tag defines a label for 
-                  several elements-->
-              <label for="username">Enter Name:</label>
-              <input
-                id="username"
-                type="text"
-                placeholder="Last Name"
-                name="username"
-              />
-            </p>
-            
-                <p>
-                <!-- this is the password label and textbox with attibutes 
-                  of a placeholder -->
-                <label for="username">Which food would you like to eat?</label>
-                <select name="" id="">
-                <option value="Chicken">Chicken</option>
-                <option value="Beef">Beef</option>
-                <option value="Fish">Fish</option>   
-               </select> 
-            </p>
-           
-                 <p>
-                <label for="requests">Do you have allergies?</label>
-                <textarea
-                  id=" requests"
-                  name=""
-                  textArea
-                  rows="5"
-                  cols="5"
-                  placeholder="Hey Rahel!"
-                  ></textarea>
-                
-              </p>
-              <button type="text">send</button>
+      <p>
+        <label for="username">Last Name:</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Last Name"
+          name="username"
+        />
+      </p>
+      <!--
+- option tag defines an option in a select list.
+- we are technically allowing a user to select what food they like to eat and we give them 
+  a combo box option to select from the three options chicken, Beef, and Fish to select. 
+-->
+      <p>
+        <label for="username">Which food would you like to eat?</label>
+        <select name="" id="">
+          <option value="Chicken">Chicken</option>
+          <option value="Beef">Beef</option>
+          <option value="Fish">Fish</option>
+        </select>
+      </p>
+      <!-- 
+- textarea tag defines a multi-line text input control.often used 
+in a form, to collect user inputs like comments or reviews.
+- id attribute is needed to associate the text area with a label.
+- name attribute is needed to reference the form data after the form is submitted.
+so here we are preparing a box for users to share thier ideas wheather they have allergies or not 
+on the text area ,those rows and cols will be the number of characters that are going to fit in the text areas 
+and also allows exact size for the text area to take and the placeholder that says hey Rahel is placed on the
+text area that is a hint for users where to write.     
+-->
+      <p>
+        <label for="requests">Do you have allergies?</label>
+        <textarea
+          id=" requests"
+          name=""
+          textArea
+          rows="5"
+          cols="5"
+          placeholder="Hey Rahel!"
+        ></textarea>
+      </p>
+      <!-- 
+the button defines clickable button
+here we are creating a button ,the text send will show up on the button to decribe its functionality 
+Always specifying the type attribute for a <button> element, is to tell browsers what type of button it is. 
+-->
+      <button type="text">send</button>
     </form>
-
-
-
-
-</body>
+  </body>
 </html>
